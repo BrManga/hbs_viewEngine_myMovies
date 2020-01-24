@@ -1,0 +1,27 @@
+<table class="table">
+    <thead>
+
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Poster</th>
+
+            <th scope="col">Title</th>
+            <th scope="col">Year</th>
+            <th scope="col">Imdb Id</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+        <tr>
+            <th scope="row" class="align-middle">{{incremented @index}}</th>
+            <th scope="row"><img src={{poster}} style="width: 150px;height:200px" alt="" /></th>
+            <th scope="col" class="align-middle">{{title}}</th>
+            <th scope="col" class="align-middle">{{year}}</th>
+            <th scope="col" class="align-middle">{{movieId}}</th>
+            <th scope="col" class="align-middle"><a href="/delete/{{id}}" class="btn btn-danger"> DEL</a></th>
+
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

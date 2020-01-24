@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row">
+        {{#each data.Search}}
+        {{#isNotEqual Poster "N/A"}}
+        <div class="d-flex flex-row col-3 p-3 justify-content-center">
+
+            <div class="d-flex flex-column">
+                <img src={{Poster}} alt="" style="height: 450px;">
+                <p class="text-center"><strong>{{Title}}</strong></p>
+                <p>Release Year: {{Year}}</p>
+            </div>
+            {{/isNotEqual}}
+        </div>
+        {{/each}}
+    </div>
+
+</div>

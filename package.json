@@ -1,0 +1,21 @@
+{
+  "name": "moviesite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "*",
+    "hbs": "*",
+    "mongoose": "*",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  },
+  "author": "Z. Bora Manga",
+  "license": "ISC"
+}

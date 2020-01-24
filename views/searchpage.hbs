@@ -1,0 +1,19 @@
+<div class="container">
+    {{#if data}}
+    <div class="row mt-4">
+        {{#each data.Search}}
+        {{#isNotEqual Poster "N/A"}}
+
+        <div class="d-flex flex-column col-4">
+            <img src={{Poster}} alt="" style="height: 450px">
+            <p class="text-center pt-4" style="height: 70px"><strong>{{Title}}</strong></p>
+            <p>Release Year: {{Year}}</p>
+            <p><a href="/addtomyfavorites/{{imdbID}}" class="btn btn-danger d-block">ADD TO MY FAVORITES</a></p>
+        </div>
+        {{/isNotEqual}}
+        {{/each}}
+        {{else}}
+        <h4>Please search a movie by title</h4>
+    </div>
+    {{/if}}
+</div>
